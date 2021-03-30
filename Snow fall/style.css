@@ -1,0 +1,30 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.snow{
+    position: fixed;
+    top: -1vh;
+    font-size: 18px;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall{
+    to {
+        transform: translateY(105vh);
+    }
+}
+
+body{
+    background-image: url("stdb.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
